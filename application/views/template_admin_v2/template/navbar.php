@@ -2,7 +2,7 @@
         <div class="row border-bottom">
         <nav class="navbar navbar-static-top white-bg" role="navigation" style="margin-bottom: 0">
         <div class="navbar-header">
-            <img alt="image" class="navbar-minimalize minimalize-styl-2 img-circle" width="60px" src="<?=base_url()?>assets/images/tadika.jpg" style="float: left; margin: 10px" />
+            <img alt="image" class="navbar-minimalize minimalize-styl-2 img" width="60px" src="<?=base_url()?>assets/images/logo.png" style="float: left; margin: 10px" />
             <!-- <a class="navbar-minimalize minimalize-styl-2 btn btn-primary " href="#"><i class="fa fa-bars"></i> </a> -->
             <form role="search" class="navbar-form-custom" action="search_results.html">
                 

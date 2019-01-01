@@ -47,7 +47,10 @@
 		                </div>
 		                <div>
 		                    <button type="submit" class="btn btn-primary" data-toggle="modal" data-target="#myModal">Login</button>
-		                    Halaman utama, klik <a href="<?=base_url()?>">disini</a>
+		                    Kembali ke <a href="<?=base_url()?>"><strong>halaman utama</strong></a>
+							<br/>
+							<br/>
+							<center> &copy Aska </center>
 		                </div>
 		            </form>
 		            <br />     

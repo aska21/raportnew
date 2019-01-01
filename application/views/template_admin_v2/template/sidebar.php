@@ -7,7 +7,7 @@
                             <?php if($this->session->userdata('status') != ''){?>
                             <img alt="image" class="img-circle" width="100px" src="<?=base_url()?>assets/images/user_fb.jpeg" />
                             <?php }else{?>
-                            <img alt="image" class="img-circle" width="100px" src="<?=base_url()?>assets/images/tadika.jpg" />
+                            <img alt="image" class="img" width="100px" src="<?=base_url()?>assets/images/logo.png" />
                             <?php }?>
                             </span>
                         <a data-toggle="dropdown" class="dropdown-toggle" href="#">

@@ -669,7 +669,7 @@
                         <br/><br/>
                         <center>Kepala Sekolah</center>
                         <br/><br/><br/><br/>
-                        <center>Rohmadi, S.T</center>
+                        <center>Aska Faleh,M.Pd</center>
 
             </div>
         </div>
