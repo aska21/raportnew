@@ -16,10 +16,9 @@
                     <div class="col-md-3">
                         <div class="bxslider">
                             <div style="max-height: 10px"><img src="<?=base_url()?>assets/images/_DSC0549.JPG"></div>
-                            <div><img src="<?=base_url()?>assets/images/u2.jpg"></div>
-                            <div><img src="<?=base_url()?>assets/images/u3.jpg"></div>
-                            <div><img src="<?=base_url()?>assets/images/u4.jpg"></div>
-                            <div><img src="<?=base_url()?>assets/images/u1.jpg"></div>
+                            <div><img src="<?=base_url()?>assets/images/smk.jpg"></div>
+                            <div><img src="<?=base_url()?>assets/images/smkk.jpg"></div>
+                            <div><img src="<?=base_url()?>assets/images/ssmk1.jpg"></div>
                         </div>
                     </div>
                     <div class="col-md-9">
@@ -37,14 +36,14 @@
                                 <td>Kedaton</td>
                             </tr>
                             <tr>
-                                <td>Kabupaten </td>
+                                <td>Kota </td>
                                 <td>:</td>
-                                <td>-</td>
+                                <td>Bandar Lampung</td>
                             </tr>
                             <tr>
                                 <td>Provinsi </td>
                                 <td>:</td>
-                                <td>Bandar Lampung</td>
+                                <td>Lampung</td>
                             </tr>
                         </table>
                     </div>

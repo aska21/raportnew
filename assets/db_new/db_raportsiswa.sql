@@ -3,8 +3,8 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Dec 30, 2018 at 05:56 AM
--- Server version: 10.1.28-MariaDB
+-- Generation Time: 11 Jan 2019 pada 18.33
+-- Versi Server: 10.1.28-MariaDB
 -- PHP Version: 5.6.32
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
@@ -25,7 +25,7 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Table structure for table `tb_catatan`
+-- Struktur dari tabel `tb_catatan`
 --
 
 CREATE TABLE `tb_catatan` (
@@ -37,16 +37,17 @@ CREATE TABLE `tb_catatan` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `tb_catatan`
+-- Dumping data untuk tabel `tb_catatan`
 --
 
 INSERT INTO `tb_catatan` (`id`, `nis`, `thnajaran`, `semester`, `catatan`) VALUES
-(1, 'SIS001', '2017/2018', '1 - ganjil', 'Pengawasan terhadap belajar anak di rumah');
+(1, 'SIS001', '2017/2018', '1 - ganjil', 'Pengawasan terhadap belajar anak di rumah'),
+(2, 'SIS009', '2018/2019', '2 - ganjil', '');
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `tb_guru`
+-- Struktur dari tabel `tb_guru`
 --
 
 CREATE TABLE `tb_guru` (
@@ -66,17 +67,19 @@ CREATE TABLE `tb_guru` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `tb_guru`
+-- Dumping data untuk tabel `tb_guru`
 --
 
 INSERT INTO `tb_guru` (`idguru`, `kodeguru`, `namaguru`, `alamat`, `telp`, `jk`, `statuskepegawaian`, `jenisptk`, `agama`, `tempatlahir`, `tgllahir`, `username`, `password`) VALUES
 (1, 'GUR001', 'Guru', 'jhgfd', '0987654', 'Pria', 'Aktif', 'PNS', 'Islam', 'PU', '1991-06-19', 'guru', '$2y$10$CfSyFMmi8aGq8Bq7g7GyduJw1TBmZciQbrqoCMDKB/ioHTx4Z1lLK'),
-(2, 'GUR002', 'Guru02', 'bandar lampung', '089', 'Pria', 'honor', '-', 'Islam', 'Bandar Lampung', '1986-12-31', 'guru02', '$2y$10$ZSfLJyp1UgM5PE9V4SeIr.zJ4zm.4q26heXr2beLo0X7bymrP1cA2');
+(2, 'GUR002', 'Guru02', 'bandar lampung', '089', 'Pria', 'honor', '**', 'Islam', 'Bandar Lampung', '1986-12-31', 'guru02', '$2y$10$ZSfLJyp1UgM5PE9V4SeIr.zJ4zm.4q26heXr2beLo0X7bymrP1cA2'),
+(3, 'GUR003', 'Guru03', 'bandar Lampung', '089', 'Pria', 'honor', '**', 'Islam', 'Lampung', '1992-11-01', 'guru03', '$2y$10$H8irEB.JuSZc/bl0xg0xwuM9pQSpjlFWVVlJ8z/mpKWz3c2kUZmJq'),
+(4, 'GUR004', 'Guru04', 'bandar lampung', '089', 'Pria', 'honor', '**', 'Islam', 'Bandar Lampung', '1990-01-04', 'guru04', '$2y$10$6ZX/NBOPu0IwVibYW2pcQubcJgy99wWT33Heau2Wvb.pePHb62Ley');
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `tb_kegiatan`
+-- Struktur dari tabel `tb_kegiatan`
 --
 
 CREATE TABLE `tb_kegiatan` (
@@ -92,16 +95,17 @@ CREATE TABLE `tb_kegiatan` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `tb_kegiatan`
+-- Dumping data untuk tabel `tb_kegiatan`
 --
 
 INSERT INTO `tb_kegiatan` (`idkegiatan`, `nis`, `thnajaran`, `semester`, `namadu`, `alamat`, `lamadanwaktu`, `nilai`, `predikat`) VALUES
-(3, 'SIS001', '2017/2018', '1 - ganjil', 'jsjsdj', 'djjdj', 'jdjd', 80, 'dxmxd');
+(3, 'SIS001', '2017/2018', '1 - ganjil', 'jsjsdj', 'djjdj', 'jdjd', 80, 'dxmxd'),
+(4, 'SIS009', '2018/2019', '2 - ganjil', 'pabrik', 'lampung', '6 bulan', 80, '2');
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `tb_kelas`
+-- Struktur dari tabel `tb_kelas`
 --
 
 CREATE TABLE `tb_kelas` (
@@ -116,18 +120,20 @@ CREATE TABLE `tb_kelas` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `tb_kelas`
+-- Dumping data untuk tabel `tb_kelas`
 --
 
 INSERT INTO `tb_kelas` (`idkelas`, `kodekelas`, `namakelas`, `bidangstudi`, `programstudikeahlian`, `kompetensikeahlian`, `namawalikelas`, `semester`) VALUES
 (1, 'OT001', 'Otomotif 1', 'Mesin', 'Teknik Mesin', 'Mesin Kendaraan Besar', '1', '1'),
 (2, 'MM001', 'Multimedia', 'Multimedia', 'Multimedia', 'Multimedia', '2', 'Genap'),
-(3, 'AP001', 'Akuntansi Pemasaran', 'Akuntansi', 'Akuntan', 'Akuntansi', '1', 'Genap');
+(3, 'AP001', 'Administrasi Perkant', 'Administrasi Perkantoran', 'Perkantoran', 'Perkantoran', '1', 'Genap'),
+(4, 'ANM001', 'Animasi', 'Animasi', 'Animasi', 'Animasi', '3', 'Genap'),
+(5, 'TKJ001', 'Teknik Komputer dan ', 'TKJ', 'Perangkat Keras Komputer', 'Jaringan', '4', 'Genap');
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `tb_kepribadian`
+-- Struktur dari tabel `tb_kepribadian`
 --
 
 CREATE TABLE `tb_kepribadian` (
@@ -144,7 +150,7 @@ CREATE TABLE `tb_kepribadian` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `tb_kepribadian`
+-- Dumping data untuk tabel `tb_kepribadian`
 --
 
 INSERT INTO `tb_kepribadian` (`id`, `nis`, `thajaran`, `semester`, `kelakuan`, `kerajinan`, `kerapian`, `komponen`, `predikat`, `kategori`) VALUES
@@ -154,12 +160,16 @@ INSERT INTO `tb_kepribadian` (`id`, `nis`, `thajaran`, `semester`, `kelakuan`, `
 (9, 'SIS001', '2017/2018', '1 - ganjil', NULL, NULL, NULL, 'osis', '-', 'pengembangan diri'),
 (10, 'SIS001', '2017/2018', '1 - ganjil', NULL, NULL, NULL, 'sepak bola', '-', 'pengembangan diri'),
 (11, 'SIS001', '2017/2018', '1 - ganjil', NULL, NULL, NULL, 'rohis', '-', 'pengembangan diri'),
-(12, 'SIS001', '2017/2018', '1 - ganjil', NULL, NULL, NULL, 'pramuka', '-', 'pengembangan diri');
+(12, 'SIS001', '2017/2018', '1 - ganjil', NULL, NULL, NULL, 'pramuka', '-', 'pengembangan diri'),
+(13, 'SIS009', '2018/2019', '2 - ganjil', NULL, NULL, NULL, 'sepak bola', '2', 'pengembangan diri'),
+(14, 'SIS009', '2018/2019', '2 - ganjil', NULL, NULL, NULL, 'kelakuan', 'A', 'kepribadian'),
+(15, 'SIS009', '2018/2019', '2 - ganjil', NULL, NULL, NULL, 'kerajinan', 'A', 'kepribadian'),
+(16, 'SIS009', '2018/2019', '2 - ganjil', NULL, NULL, NULL, 'kerapian', 'B', 'kepribadian');
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `tb_mapel`
+-- Struktur dari tabel `tb_mapel`
 --
 
 CREATE TABLE `tb_mapel` (
@@ -170,7 +180,7 @@ CREATE TABLE `tb_mapel` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `tb_mapel`
+-- Dumping data untuk tabel `tb_mapel`
 --
 
 INSERT INTO `tb_mapel` (`idmapel`, `kodemapel`, `kategorimapel`, `namamapel`) VALUES
@@ -179,12 +189,13 @@ INSERT INTO `tb_mapel` (`idmapel`, `kodemapel`, `kategorimapel`, `namamapel`) VA
 (3, 'BHS002', 'normatif', 'Bahasa Ingris'),
 (4, 'IPA001', 'normatif', 'Ilmu Pengetahuan Alam'),
 (5, 'FSK001', 'normatif', 'Fisika'),
-(6, 'KM001', 'normatif', 'Kimia');
+(6, 'KM001', 'normatif', 'Kimia'),
+(7, 'IPS001', 'normatif', 'Ilmu Pengetahuan Sosial');
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `tb_nilai`
+-- Struktur dari tabel `tb_nilai`
 --
 
 CREATE TABLE `tb_nilai` (
@@ -207,18 +218,20 @@ CREATE TABLE `tb_nilai` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `tb_nilai`
+-- Dumping data untuk tabel `tb_nilai`
 --
 
 INSERT INTO `tb_nilai` (`idnilai`, `nis`, `kodemapel`, `kodeguru`, `thnajaran`, `semester`, `sk7`, `sk8`, `sk9`, `sk10`, `uts`, `us`, `afaktif`, `psycom`, `kkm`, `deskripsi`) VALUES
 (5, 'SIS001', 'MTK 001', 'GUR001', '2017/2018', '1 - ganjil', 91, 91, 91, 91, 91, 91, 91, 91, 91, '-'),
 (6, 'SIS001', 'MTK 001', 'GUR001', '2018/2019', '1 - ganjil', 0, 0, 0, 0, 0, 0, 0, 0, 0, '-'),
-(7, 'SIS002', 'MTK 001', 'GUR001', '2018/2019', '1 - ganjil', 0, 0, 0, 0, 0, 0, 0, 0, 0, '-');
+(7, 'SIS002', 'MTK 001', 'GUR001', '2018/2019', '1 - ganjil', 0, 0, 0, 0, 0, 0, 0, 0, 0, '-'),
+(8, 'SIS003', 'MTK 001', 'GUR001', '2018/2019', '2 - ganjil', 75, 80, 80, 70, 85, 80, 75, 75, 65, '-'),
+(9, 'SIS009', 'MTK 001', 'GUR004', '2018/2019', '2 - ganjil', 80, 80, 80, 80, 80, 80, 80, 80, 70, '-');
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `tb_pegawai`
+-- Struktur dari tabel `tb_pegawai`
 --
 
 CREATE TABLE `tb_pegawai` (
@@ -237,7 +250,7 @@ CREATE TABLE `tb_pegawai` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `tb_pegawai`
+-- Dumping data untuk tabel `tb_pegawai`
 --
 
 INSERT INTO `tb_pegawai` (`idpegawai`, `kodepegawai`, `namapegawai`, `alamat`, `telp`, `jk`, `agama`, `tempatlahir`, `tgllahir`, `divisi`, `username`, `password`) VALUES
@@ -246,7 +259,7 @@ INSERT INTO `tb_pegawai` (`idpegawai`, `kodepegawai`, `namapegawai`, `alamat`, `
 -- --------------------------------------------------------
 
 --
--- Table structure for table `tb_predikat`
+-- Struktur dari tabel `tb_predikat`
 --
 
 CREATE TABLE `tb_predikat` (
@@ -260,7 +273,7 @@ CREATE TABLE `tb_predikat` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `tb_presensi`
+-- Struktur dari tabel `tb_presensi`
 --
 
 CREATE TABLE `tb_presensi` (
@@ -276,18 +289,19 @@ CREATE TABLE `tb_presensi` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `tb_presensi`
+-- Dumping data untuk tabel `tb_presensi`
 --
 
 INSERT INTO `tb_presensi` (`id`, `nis`, `thajaran`, `semester`, `izin`, `sakit`, `tanpaketerangan`, `jenis`, `jumlah`) VALUES
 (4, 'SIS001', '2017/2018', '1 - ganjil', NULL, NULL, NULL, 'sakit', '0'),
 (5, 'SIS001', '2017/2018', '1 - ganjil', NULL, NULL, NULL, 'izin', '0'),
-(6, 'SIS001', '2017/2018', '1 - ganjil', NULL, NULL, NULL, 'tanpa keterangan', '0');
+(6, 'SIS001', '2017/2018', '1 - ganjil', NULL, NULL, NULL, 'tanpa keterangan', '0'),
+(7, 'SIS009', '2018/2019', '2 - ganjil', NULL, NULL, NULL, 'izin', '2');
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `tb_siswa`
+-- Struktur dari tabel `tb_siswa`
 --
 
 CREATE TABLE `tb_siswa` (
@@ -314,19 +328,20 @@ CREATE TABLE `tb_siswa` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `tb_siswa`
+-- Dumping data untuk tabel `tb_siswa`
 --
 
 INSERT INTO `tb_siswa` (`idsiswa`, `nis`, `namasiswa`, `tempatlahir`, `tgllahir`, `agama`, `jk`, `alamat`, `namaayah`, `namaibu`, `namawali`, `pekerjaanayah`, `pekerjaanibu`, `pekerjaanwali`, `asalsekolah`, `tglmasuksekolah`, `telpayah`, `idkelas`, `username`, `password`) VALUES
 (1, 'SIS001', 'Siswa', 'Kemiling', '1989-02-09', 'Islam', 'Pria', 'KEmiling', 'Blank', 'Blank', '-', 'Programmer', 'Pengajar', '-', 'SMA N 1 Palembang', '2016-02-09', '0987654321', 1, 'siswa', '$2y$10$3/p2tnihb4ge07V1O.HUIecfiu0LDaccD0Xuzlng4fvJ0fSRrW4QC'),
 (2, 'SIS002', 'siapa', 'lampung', '1995-02-22', 'Islam', 'Pria', 'zz', 'zzzz', 'zz', 'zz', 'zz', 'zz', 'zz', 'zz', '2018-04-01', '0980', 1, 'siapa', '$2y$10$WbVkAsnOdXApm0lI7AvCd.0s9TlVBLL7ckTgiPvv7akuS5Pr4qZGS'),
-(3, 'SIS003', 'Asep', 'Bandar Lampung', '1995-05-10', 'Islam', 'Pria', 'zz', 'zzz', 'yyy', 'zzz', 'hacker', 'programmer', 'nyimak', 'bandung', '2018-04-01', '089', 1, 'Asep', '$2y$10$rN8bCB6DORuOWGqUyZ15sO03T1TBp7nAuYHFGRqsqL1MADzR.w032');
+(3, 'SIS003', 'Asep', 'Bandar Lampung', '1995-05-10', 'Islam', 'Pria', 'zz', 'zzz', 'yyy', 'zzz', 'hacker', 'programmer', 'nyimak', 'bandung', '2018-04-01', '089', 1, 'Asep', '$2y$10$rN8bCB6DORuOWGqUyZ15sO03T1TBp7nAuYHFGRqsqL1MADzR.w032'),
+(4, 'SIS009', 'Bambang', 'Bandar Lampung', '2000-12-01', 'Islam', 'Pria', 'bandar lampung', 'Sensor', 'Sensor', '-', '-', '-', '-', 'SMP Bandar Lampung', '2018-06-10', '089', 5, 'bambang', '$2y$10$c/OJ60QMYZ4EBwe4H9tnBuNWasDPMvj26JEc2pJIODus30FX2rDS2');
 
 -- --------------------------------------------------------
 
 --
 -- Stand-in structure for view `vw_nilai`
--- (See below for the actual view)
+-- (Lihat di bawah untuk tampilan aktual)
 --
 CREATE TABLE `vw_nilai` (
 `idnilai` int(11)
@@ -386,7 +401,7 @@ CREATE TABLE `vw_nilai` (
 -- --------------------------------------------------------
 
 --
--- Structure for view `vw_nilai`
+-- Struktur untuk view `vw_nilai`
 --
 DROP TABLE IF EXISTS `vw_nilai`;
 
@@ -480,43 +495,43 @@ ALTER TABLE `tb_siswa`
 -- AUTO_INCREMENT for table `tb_catatan`
 --
 ALTER TABLE `tb_catatan`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT for table `tb_guru`
 --
 ALTER TABLE `tb_guru`
-  MODIFY `idguru` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `idguru` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- AUTO_INCREMENT for table `tb_kegiatan`
 --
 ALTER TABLE `tb_kegiatan`
-  MODIFY `idkegiatan` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `idkegiatan` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- AUTO_INCREMENT for table `tb_kelas`
 --
 ALTER TABLE `tb_kelas`
-  MODIFY `idkelas` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `idkelas` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
 -- AUTO_INCREMENT for table `tb_kepribadian`
 --
 ALTER TABLE `tb_kepribadian`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;
 
 --
 -- AUTO_INCREMENT for table `tb_mapel`
 --
 ALTER TABLE `tb_mapel`
-  MODIFY `idmapel` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `idmapel` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 
 --
 -- AUTO_INCREMENT for table `tb_nilai`
 --
 ALTER TABLE `tb_nilai`
-  MODIFY `idnilai` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+  MODIFY `idnilai` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 
 --
 -- AUTO_INCREMENT for table `tb_pegawai`
@@ -534,32 +549,32 @@ ALTER TABLE `tb_predikat`
 -- AUTO_INCREMENT for table `tb_presensi`
 --
 ALTER TABLE `tb_presensi`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 
 --
 -- AUTO_INCREMENT for table `tb_siswa`
 --
 ALTER TABLE `tb_siswa`
-  MODIFY `idsiswa` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `idsiswa` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
--- Constraints for dumped tables
+-- Ketidakleluasaan untuk tabel pelimpahan (Dumped Tables)
 --
 
 --
--- Constraints for table `tb_kegiatan`
+-- Ketidakleluasaan untuk tabel `tb_kegiatan`
 --
 ALTER TABLE `tb_kegiatan`
   ADD CONSTRAINT `FK_tb_kegiatan` FOREIGN KEY (`nis`) REFERENCES `tb_siswa` (`nis`) ON DELETE CASCADE ON UPDATE CASCADE;
 
 --
--- Constraints for table `tb_kepribadian`
+-- Ketidakleluasaan untuk tabel `tb_kepribadian`
 --
 ALTER TABLE `tb_kepribadian`
   ADD CONSTRAINT `FK_tb_kepribadian` FOREIGN KEY (`nis`) REFERENCES `tb_siswa` (`nis`) ON DELETE CASCADE ON UPDATE CASCADE;
 
 --
--- Constraints for table `tb_nilai`
+-- Ketidakleluasaan untuk tabel `tb_nilai`
 --
 ALTER TABLE `tb_nilai`
   ADD CONSTRAINT `FK_tb_nilai` FOREIGN KEY (`nis`) REFERENCES `tb_siswa` (`nis`) ON DELETE CASCADE ON UPDATE CASCADE,
@@ -567,13 +582,13 @@ ALTER TABLE `tb_nilai`
   ADD CONSTRAINT `FK_tb_nilai2` FOREIGN KEY (`kodeguru`) REFERENCES `tb_guru` (`kodeguru`) ON DELETE CASCADE ON UPDATE CASCADE;
 
 --
--- Constraints for table `tb_presensi`
+-- Ketidakleluasaan untuk tabel `tb_presensi`
 --
 ALTER TABLE `tb_presensi`
   ADD CONSTRAINT `FK_tb_presensi` FOREIGN KEY (`nis`) REFERENCES `tb_siswa` (`nis`) ON DELETE CASCADE ON UPDATE CASCADE;
 
 --
--- Constraints for table `tb_siswa`
+-- Ketidakleluasaan untuk tabel `tb_siswa`
 --
 ALTER TABLE `tb_siswa`
   ADD CONSTRAINT `FK_tb_siswa` FOREIGN KEY (`idkelas`) REFERENCES `tb_kelas` (`idkelas`) ON DELETE CASCADE ON UPDATE CASCADE;
