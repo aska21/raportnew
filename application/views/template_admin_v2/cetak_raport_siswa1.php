@@ -66,27 +66,27 @@
                 <tr>
                     <td>Nama Sekolah </td>
                     <td>:</td>
-                    <td>SMK TADIKA MESRA</td>
+                    <td>SMK BISA</td>
                 </tr>
                 <tr>
                     <td>Alamat Sekolah </td>
                     <td>:</td>
-                    <td>KAMPUNG DURIAN RUNTUH</td>
+                    <td>Jl. Rusa</td>
                 </tr>
                 <tr>
                     <td>Kecamatan </td>
                     <td>:</td>
-                    <td>DURIAN RUNTUH</td>
+                    <td>KEDATON</td>
                 </tr>
                 <tr>
-                    <td>Kabupaten </td>
+                    <td>Kota </td>
                     <td>:</td>
-                    <td>SELANGOR</td>
+                    <td>BANDAR LAMPUNG</td>
                 </tr>
                 <tr>
                     <td>Provinsi </td>
                     <td>:</td>
-                    <td>KUALALUMPUR</td>
+                    <td>LAMPUNG</td>
                 </tr>
             </table>
             <br/><br/><br/>
@@ -669,7 +669,7 @@
                         <br/><br/>
                         <center>Kepala Sekolah</center>
                         <br/><br/><br/><br/>
-                        <center>Aska Faleh,M.Pd</center>
+                        <center>Aska Faleh,M.Ti</center>
 
             </div>
         </div>

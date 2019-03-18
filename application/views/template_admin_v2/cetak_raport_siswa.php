@@ -667,7 +667,7 @@
                         <br/><br/>
                         <center>Kepala Sekolah</center>
                         <br/><br/><br/><br/>
-                        <center>Aska Faleh,M.Pd</center>
+                        <center>Aska Faleh,M.Ti</center>
 
             </div>
         </div>
